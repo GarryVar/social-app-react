@@ -1,0 +1,11 @@
+.vidget{
+  padding: var(--gap-vidget);
+  width: max-content;
+  /* height: 180px; */
+  max-height: 180px;
+
+  overflow: auto;
+
+  background-color: white;
+  border-radius: var(--radius-sm);
+}

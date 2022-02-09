@@ -1,0 +1,33 @@
+.user {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 60px 1fr;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+
+  border-radius: var(--radius-circle);
+  background-color: var(--social-brand-light);
+}
+
+.info {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr;
+}
+
+.name {
+  font-size: 20px;
+}
+
+.dataTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+
+  border-radius: var(--radius-md);
+
+  font-size: 18px;
+}
