@@ -1,0 +1,14 @@
+.aside {
+  grid-area: aside;
+  padding: 10px;
+
+  background-color: var(--social-brand-color);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+
+}
+
+.inner {
+  height: 100%;
+  border-radius: var(--radius-sm);
+}

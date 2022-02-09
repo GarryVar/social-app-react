@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+
+  grid-area: header;
+  background-color: var(--social-brand-color);
+  border-radius: var(--radius-sm);
+  padding: var(--gap-inner);
+  /* background-image: url('../../../green-organic-background-3.jpg'); */
+  /* background-position: -170px -22px; */
+}
+.header::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-position: -170px -22px;
+
+  /* background-image: url('../../../green-organic-background-3.jpg'); */
+  /* filter: blur(5px); */
+}
+
+.inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+  border-radius: var(--radius-sm);
+  z-index: 10;
+}
+
+.logo {
+  width: 120px;
+  height: 60px;
+}
+
+.logo a {
+  color: white;
+  font-weight: bold;
+}

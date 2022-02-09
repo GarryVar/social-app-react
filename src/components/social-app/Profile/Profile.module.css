@@ -1,0 +1,68 @@
+.profile {
+  position: relative;
+}
+
+.inner {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr 120px;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+.title {
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  gap: 20px;
+  padding: 15px;
+
+  border: 1px solid #d0d0d0;
+  border-radius: var(--radius-sm);
+}
+
+.user {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 60px 1fr;
+
+  width: max-content;
+}
+
+.avatar {
+  width: 60px;
+  height: 60px;
+
+  border-radius: var(--radius-circle);
+  background-color: var(--social-brand-light);
+}
+
+.name {
+  font-size: 20px;
+}
+
+.dataTable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  padding: 10px;
+
+  border-radius: var(--radius-md);
+
+  font-size: 18px;
+
+  background-color: #ebebeb;
+}

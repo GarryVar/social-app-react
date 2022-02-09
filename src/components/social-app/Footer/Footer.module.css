@@ -1,0 +1,12 @@
+.footer {
+  grid-area: footer;
+  padding: var(--gap-inner);
+
+  background-color: var(--social-brand-color);
+  border-radius: var(--radius-sm);
+}
+
+
+.inner {
+  height: 100%;
+}

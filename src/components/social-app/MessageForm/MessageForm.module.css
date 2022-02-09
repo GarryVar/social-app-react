@@ -1,0 +1,18 @@
+.inner {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.inner textarea {
+  padding: 10px;
+  width: 100%;
+
+  border-radius: var(--radius-sm);
+  border: 1px solid #ebebeb;
+}
+
+.inner button[type="submit"] {
+  padding: 5px;
+  width: 120px;
+  justify-self: end;
+}
