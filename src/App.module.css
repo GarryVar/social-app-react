@@ -22,3 +22,10 @@
     width: 80%;
   }
 }
+
+@media(min-width: 1300px) {
+  .container {
+    margin: auto;
+    width: 1200px;
+  }
+}
