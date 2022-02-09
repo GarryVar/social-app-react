@@ -4,20 +4,26 @@
   --social-brand-light: #deee96;
   --social-brand-color: #439346;
   --transparent: #ffffff40;
+
   --hover-transparent: #07020240;
+  --hover-btn: #2d5f2f;
+
+
   --basic-b-color: #c5e459;
   --basic-grid-item: #40556f;
   --gradient: -90deg, #c5e459, #23a6d5;
   --nav-list: #3a7d3d;
   --light: #ebebeb;
 
-  --masonry-font: 'Josefin Sans', sans-serif;
+
+  --main-font: 'Raleway', sans-serif;
   --radius-sm: 5px;
   --radius-md: 10px;
   --radius-lg: 50px;
   --radius-circle: 50%;
 
   --gap-inner: 10px;
+  --gap-vidget: 20px;
 }
 
 html {
@@ -37,7 +43,8 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-family: var(--masonry-font);
+  font-family: var(--main-font);
+  font-weight: 100;
   /* background-image: linear-gradient(var(--gradient)); */
    background-image: url("./green-organic-background-3.jpg");
    /* background-attachment: fixed; */
@@ -75,15 +82,30 @@ ol {
   list-style: none;
 }
 
+
+button {
+  padding: 0;
+  cursor: pointer;
+
+  border: none;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.active {
+  color: var(--basic-b-color)!important;
+}
+
+
 .social-wrapper {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-template-rows: min-content 1fr 80px;
   grid-template-areas: 
-    "header header header header"
-    "aside content content content"
-    "aside footer footer footer";
+    "header header header header header"
+    "aside content content content content"
+    "aside footer footer footer footer";
 
     min-height: 600px;
 }
