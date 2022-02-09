@@ -1,0 +1,17 @@
+.appLib {
+  position: relative;
+}
+
+.inner {
+  display: grid;
+  gap: 10px;
+  grid-template-columns:  repeat(4, 40px);
+}
+
+.appItem {
+  width: 40px;
+  height: 40px;
+
+  background-color: var(--light);
+  border-radius: var(--radius-sm);
+}

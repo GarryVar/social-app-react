@@ -34,29 +34,20 @@
   gap: 10px;
   padding: 15px;
 
-  font-size: 20px;
+  font-size: 18px;
   color: white;
-  font-weight: bold;
+  font-weight: normal;
 }
-.activeLink {
-  color: gold;
-}
+
 
 .link:focus,
 .link:hover {
   background-color: var(--hover-transparent);
-  /* border-radius: var(--radius-md); */
-  /* color: red; */
-}
-
-/* .link:focus .icon svg, */
-/* .link:hover .icon svg { */
-  /* fill: red; */
-/* } */
+} 
 
 .icon {
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
 }
 
 .icon svg {

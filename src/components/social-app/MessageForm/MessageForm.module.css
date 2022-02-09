@@ -1,5 +1,6 @@
 .inner {
   display: grid;
+  gap: 15px;
   grid-template-columns: 1fr;
 }
 
@@ -12,7 +13,15 @@
 }
 
 .inner button[type="submit"] {
-  padding: 5px;
+  padding: 10px;
   width: 120px;
   justify-self: end;
+
+  background-color: var(--social-brand-color);
+  color: var(--content-bg-color);
+  border-radius: var(--radius-sm);
+}
+
+.inner button[type="submit"]:hover {
+  background-color: var(--hover-btn);
 }
