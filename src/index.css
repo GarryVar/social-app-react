@@ -1,5 +1,4 @@
 :root {
-  /* --social-brand-color: #ffffffc9;  deprecate*/
   --content-bg-color: whitesmoke;
   --social-brand-light: #deee96;
   --social-brand-color: #439346;
@@ -8,13 +7,11 @@
   --hover-transparent: #07020240;
   --hover-btn: #2d5f2f;
 
-
   --basic-b-color: #c5e459;
   --basic-grid-item: #40556f;
   --gradient: -90deg, #c5e459, #23a6d5;
   --nav-list: #3a7d3d;
   --light: #ebebeb;
-
 
   --main-font: 'Raleway', sans-serif;
   --radius-sm: 5px;
@@ -46,8 +43,8 @@ body {
   font-family: var(--main-font);
   font-weight: 100;
   /* background-image: linear-gradient(var(--gradient)); */
-   background-image: url("./green-organic-background-3.jpg");
-   /* background-attachment: fixed; */
+  background-image: url("./green-organic-background-3.jpg");
+  /* background-attachment: fixed; */
 }
 
 img {
@@ -62,8 +59,8 @@ a {
   color: var(--social-brand-light);
 }
 
-h1, 
-h2, 
+h1,
+h2,
 h3 {
   margin: 0;
   padding: 0;
@@ -97,19 +94,40 @@ svg {
 }
 
 .active {
-  color: var(--basic-b-color)!important;
+  color: var(--basic-b-color) !important;
 }
 
 .social-wrapper {
   display: grid;
-  gap: 20px;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: min-content 1fr 80px;
-  grid-template-areas: 
-    "header header header header header"
-    "aside content content content content"
-    "aside footer footer footer footer";
+  gap: 10px;
+  grid-template-columns: 1fr min-content;
+  grid-template-rows: 80px 1fr 80px;
+  grid-template-areas:
+    "header aside"
+    "content content"
+    "footer footer";
 
-    min-height: 600px;
+  min-height: 600px;
 }
 
+@media(min-width: 648px) {
+  .social-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas:
+      "header aside"
+      "content content"
+      "footer footer";
+  }
+}
+
+@media(min-width: 768px) {
+  .social-wrapper {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: min-content 1fr 80px;
+    grid-template-areas:
+      "header header header header header"
+      "aside content content content content"
+      "aside footer footer footer footer";
+  }
+}
