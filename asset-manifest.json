@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/social-messanger-app/static/css/main.ce3bc1d6.css",
+    "main.js": "/social-messanger-app/static/js/main.e071a92e.js",
+    "static/js/787.d0d4b16b.chunk.js": "/social-messanger-app/static/js/787.d0d4b16b.chunk.js",
+    "static/media/logo.svg": "/social-messanger-app/static/media/logo.6e3c3efbab5210ad317d8cd1f439bacf.svg",
+    "index.html": "/social-messanger-app/index.html",
+    "main.ce3bc1d6.css.map": "/social-messanger-app/static/css/main.ce3bc1d6.css.map",
+    "main.e071a92e.js.map": "/social-messanger-app/static/js/main.e071a92e.js.map",
+    "787.d0d4b16b.chunk.js.map": "/social-messanger-app/static/js/787.d0d4b16b.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ce3bc1d6.css",
+    "static/js/main.e071a92e.js"
+  ]
+}
