@@ -92,6 +92,10 @@ button {
   font-size: 1rem;
 }
 
+svg {
+  fill: var(--basic-b-color);
+}
+
 .active {
   color: var(--basic-b-color)!important;
 }
