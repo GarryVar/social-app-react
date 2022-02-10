@@ -19,7 +19,7 @@
 }
 
 .name {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .dataTable {
@@ -28,6 +28,5 @@
   gap: 15px;
 
   border-radius: var(--radius-md);
-
-  font-size: 18px;
+  font-size: 14px;
 }
