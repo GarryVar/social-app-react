@@ -100,7 +100,6 @@ svg {
   color: var(--basic-b-color)!important;
 }
 
-
 .social-wrapper {
   display: grid;
   gap: 20px;
@@ -113,3 +112,4 @@ svg {
 
     min-height: 600px;
 }
+
