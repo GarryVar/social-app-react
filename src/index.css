@@ -42,9 +42,7 @@ body {
 
   font-family: var(--main-font);
   font-weight: 100;
-  /* background-image: linear-gradient(var(--gradient)); */
-  background-image: url("./green-organic-background-3.jpg");
-  /* background-attachment: fixed; */
+  background-color: var(--light);
 }
 
 img {
@@ -113,11 +111,6 @@ svg {
 @media(min-width: 648px) {
   .social-wrapper {
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 80px 1fr 80px;
-    grid-template-areas:
-      "header aside"
-      "content content"
-      "footer footer";
   }
 }
 
