@@ -37,21 +37,25 @@
   font-size: 18px;
   color: white;
   font-weight: normal;
+
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
 }
 
 
 .link:focus,
 .link:hover {
   background-color: var(--hover-transparent);
+  color: var(--basic-b-color);
 } 
+
+.link:focus svg,
+.link:hover svg {
+  fill: white;
+}
 
 .icon {
   width: 20px;
   height: 20px;
-}
-
-.icon svg {
-  fill: #ffff;
 }
 
 .text {
