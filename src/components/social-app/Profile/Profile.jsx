@@ -3,7 +3,6 @@ import style from './Profile.module.css';
 import MessageForm from './../MessageForm/MessaageForm';
 import Vidget from './../Vidget/Vidget';
 import User from './../Vidget/VidgetContent/User';
-import AppLib from '../Vidget/VidgetContent/App-lib';
 
 const Profile = props => {
   return (
