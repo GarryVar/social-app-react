@@ -13,7 +13,7 @@ const User = () => {
           <span>City:</span>
           <span>Simferopol</span>
           <span>Web Site</span>
-          <span><a href="https://garryvar.ru">garryvar.ru</a></span>
+          <span><a href="https://garryvar.ru">https://garryvar.ru</a></span>
         </div>
       </div>
     </div>
