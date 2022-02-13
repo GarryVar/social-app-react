@@ -1,11 +1,11 @@
 import style from './Aside.module.css';
 import Navigation from './../Navigation/Navigation';
 
-const Aside = props => {
+const Aside = ({ data }) => {
   return (
     <aside className={style.aside}>
       <div className={style.inner}>
-        <Navigation value={props.data} />
+        <Navigation items={data} />
       </div>
     </aside>
   )

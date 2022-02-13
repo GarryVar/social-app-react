@@ -1,16 +1,15 @@
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import style from './Navigation.module.css';
 
 
-const Navitem = props => {
+const Navitem = ({ value }) => {
   return (
     <li>
-      <NavLink exact className={style.link} to={props.value.link}>
-        <span class={style.icon}>{props.value.icon}</span>
-        <span className={style.text}>{props.value.text}</span>
-      </NavLink>
+      <Link className={style.link} to={value.link}>
+        <span class={style.icon}>{value.icon}</span>
+        <span className={style.text}>{value.text}</span>
+      </Link>
     </li >
   )
 }
-
 export default Navitem;

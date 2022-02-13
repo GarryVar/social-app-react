@@ -4,7 +4,7 @@ import MessageForm from './../MessageForm/MessaageForm';
 import Vidget from './../Vidget/Vidget';
 import User from './../Vidget/VidgetContent/User';
 
-const Profile = props => {
+const Profile = () => {
   return (
     <div className={style.profile}>
       <div className={style.inner}>

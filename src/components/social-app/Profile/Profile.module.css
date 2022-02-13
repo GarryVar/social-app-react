@@ -4,7 +4,7 @@
 
 .inner {
   display: grid;
-  gap: 20px;
+  gap: var(--gap-inner);
   grid-template-columns: 1fr;
   grid-template-rows: min-content 1fr min-content;
   align-items: center;
@@ -26,6 +26,7 @@
   width: 20px;
   height: 20px;
 }
+
 .title {
   font-weight: normal;
   font-size: 20px;
