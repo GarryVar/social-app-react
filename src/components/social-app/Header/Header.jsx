@@ -1,6 +1,6 @@
-import SearchForm from '../SearchForm/SearchForm';
 import style from './Header.module.css';
 import Logo from './../Logo/Logo';
+import SearchForm from './../SearchForm/SearchForm';
 
 
 const Header = () => {
