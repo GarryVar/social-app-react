@@ -1,0 +1,28 @@
+.dialogs {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 180px 1fr;
+  padding: var(--gap-inner);
+
+  height: 100%;
+
+  background-color: var(--content-bg-color);
+}
+
+.dialogsList {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+.dialog {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+
+  background-color: var(--social-brand-color);
+  border-radius: var(--radius-sm);
+  color: var(--content-bg-color);
+}
+
