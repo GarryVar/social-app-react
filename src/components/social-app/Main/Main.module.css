@@ -1,0 +1,6 @@
+.inner {
+  padding: var(--gap-inner);
+  height: 100%;
+  background-color: var(--content-bg-color);
+
+}

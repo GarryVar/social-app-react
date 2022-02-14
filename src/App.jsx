@@ -12,6 +12,7 @@ import Dialogs from './components/social-app/Dialogs/Dialogs';
 import News from './components/social-app/News/News';
 import Music from './components/social-app/Music/Music';
 import Settings from './components/social-app/Settings/Settings';
+import Main from './components/social-app/Main/Main';
 
 
 const App = () => {
@@ -26,6 +27,7 @@ const App = () => {
             <main className={style1.content}>
               <div className={style1.inner}>
                 <Routes>
+                  <Route path="/" element={<Main />} />
                   <Route path='/profile' element={<Profile />} />
                   <Route path='/dialogs' element={<Dialogs />} />
                   <Route path='/news' element={<News />} />
