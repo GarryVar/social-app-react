@@ -26,8 +26,10 @@
   position: relative;
   display: grid;
   align-items: center;
-
-  grid-template-columns: min-content 1fr 1fr;
+  gap: 20px;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas: 
+    "logo search";
   border-radius: var(--radius-sm);
   z-index: 10;
 }

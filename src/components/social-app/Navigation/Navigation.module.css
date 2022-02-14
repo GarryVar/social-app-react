@@ -15,7 +15,6 @@
   gap: 10px;
   padding: 12px;
 
-  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s;
   background-color: var(--nav-list);
 }
 
@@ -28,11 +27,6 @@
   height: 30px;
 }
 
-.link:focus,
-.link:hover {
-  /* background-color: var(--hover-transparent); */
-  color: var(--basic-b-color);
-}
 
 .link:focus svg,
 .link:hover svg {
@@ -60,6 +54,11 @@
   .navButton {
     display: none;
   }
+
+  .link:focus .text,
+  .link:hover .text {
+    color: var(--basic-b-color);
+  }
 }
 
 @media(min-width: 768px) {
@@ -76,8 +75,8 @@
   }
 
   .list li {
-    border-top: 1px solid var(--social-brand-color);
-    border-bottom: 1px solid var(--hover-transparent);
+    border-top: 1px solid #66839e;
+    border-bottom: 1px solid #50687d;
   }
 
   .list li:first-child {
@@ -92,7 +91,5 @@
     display: block;
     font-size: 14px;
     color: white;
-    font-weight: normal;
-    text-transform: uppercase;
   }
 }

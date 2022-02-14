@@ -1,22 +1,17 @@
-import ProfileIcon from './../Navigation/icon-components/ProfileIcon';
 import style from './Profile.module.css';
 import MessageForm from './../MessageForm/MessaageForm';
 import User from './../Vidget/VidgetContent/User';
+import Vidget from '../Vidget/Vidget';
 
 const Profile = () => {
   return (
     <div className={style.profile}>
       <div className={style.inner}>
 
-        {/* Header */}
-        <div className={style.header}>
-          <div className={style.icon}><ProfileIcon /></div>
-          <h2 className={style.title}>Profile</h2>
-        </div>
 
         {/* Content */}
         <div className={style.content}>
-          <User />
+          <Vidget data={<User />} />
         </div>
 
         {/* Footer */}

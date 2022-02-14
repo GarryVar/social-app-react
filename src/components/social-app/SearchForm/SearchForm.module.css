@@ -1,0 +1,23 @@
+.searchForm {
+  display: grid;
+  grid-template-columns: 1fr min-content;
+  grid-area: search;
+
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+
+
+  height: 35px;
+}
+
+.searchForm input {
+  padding-left: 10px;
+  width: 100%;
+  height: 100%;
+
+  border: none;
+}
+
+.searchForm button {
+  padding: 0 10px;
+}

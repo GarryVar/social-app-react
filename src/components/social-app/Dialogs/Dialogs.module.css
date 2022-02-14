@@ -2,11 +2,6 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 180px 1fr;
-  padding: var(--gap-inner);
-
-  height: 100%;
-
-  background-color: var(--content-bg-color);
 }
 
 .dialogsList {
@@ -18,8 +13,6 @@
 .dialog {
   display: flex;
   align-items: center;
-  padding: 10px;
-
 }
 
 .dialog a {

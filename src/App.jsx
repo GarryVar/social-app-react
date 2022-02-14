@@ -24,10 +24,11 @@ const App = () => {
             <Header />
             <Aside data={links} />
 
+
             <main className={style1.content}>
               <div className={style1.inner}>
                 <Routes>
-                  <Route path="/" element={<Main />} />
+                  <Route path='/' element={<Main />} />
                   <Route path='/profile' element={<Profile />} />
                   <Route path='/dialogs' element={<Dialogs />} />
                   <Route path='/news' element={<News />} />
@@ -36,6 +37,7 @@ const App = () => {
                 </Routes>
               </div>
             </main>
+
             <Footer />
           </div>
         </div>
