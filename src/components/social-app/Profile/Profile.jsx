@@ -1,7 +1,6 @@
 import ProfileIcon from './../Navigation/icon-components/ProfileIcon';
 import style from './Profile.module.css';
 import MessageForm from './../MessageForm/MessaageForm';
-import Vidget from './../Vidget/Vidget';
 import User from './../Vidget/VidgetContent/User';
 
 const Profile = () => {
@@ -17,7 +16,7 @@ const Profile = () => {
 
         {/* Content */}
         <div className={style.content}>
-          <Vidget data={<User />} />
+          <User />
         </div>
 
         {/* Footer */}

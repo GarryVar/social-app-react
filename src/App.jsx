@@ -26,11 +26,11 @@ const App = () => {
             <main className={style1.content}>
               <div className={style1.inner}>
                 <Routes>
-                  <Route path='/profile' exact element={<Profile />} />
-                  <Route path='/dialogs' exact element={<Dialogs />} />
-                  <Route path='/news' exact element={<News />} />
-                  <Route path='/music' exact element={<Music />} />
-                  <Route path='/settings' exact element={<Settings />} />
+                  <Route path='/profile' element={<Profile />} />
+                  <Route path='/dialogs' element={<Dialogs />} />
+                  <Route path='/news' element={<News />} />
+                  <Route path='/music' element={<Music />} />
+                  <Route path='/settings' element={<Settings />} />
                 </Routes>
               </div>
             </main>

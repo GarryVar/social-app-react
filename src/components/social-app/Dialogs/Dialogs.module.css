@@ -20,9 +20,9 @@
   align-items: center;
   padding: 10px;
 
-
-  background-color: var(--social-brand-color);
-  border-radius: var(--radius-sm);
-  color: var(--content-bg-color);
 }
 
+.dialog a {
+  font-weight: bold;
+  color: var(--social-brand-color);
+}
