@@ -1,31 +1,51 @@
 .App {
-  padding-top: 20px;
-  padding-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
 
-  width: auto;
+.container {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: auto;
+}
+
+.wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 80px 1fr 80px;
+    grid-template-areas: "header aside" "content content" "footer footer";
+    min-height: 400px;
+}
+
+@media(min-width: 648px) {
+    .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media(min-width: 768px) {
-  .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .wrapper {
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: min-content 1fr 80px;
+        grid-template-areas: "header header header header header" "aside content content content content" "aside footer footer footer footer";
+    }
 }
 
 @media(min-width: 1200px) {
-  .container {
-    margin: auto;
-    width: 80%;
-  }
+    .container {
+        margin: auto;
+        width: 80%;
+    }
 }
 
 @media(min-width: 1300px) {
-  .container {
-    margin: auto;
-    width: 1200px;
-  }
+    .container {
+        margin: auto;
+        width: 1200px;
+    }
 }

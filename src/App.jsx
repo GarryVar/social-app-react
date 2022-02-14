@@ -20,7 +20,7 @@ const App = () => {
     <BrowserRouter>
       <div className={style.App}>
         <div className={style.container}>
-          <div className="social-wrapper">
+          <div className={style.wrapper}>
             <Header />
             <Aside data={links} />
 
