@@ -1,16 +1,17 @@
 :root {
   --content-bg-color: whitesmoke;
-  --social-brand-light: #deee96;
-  --social-brand-color: #439346;
+  --social-brand-light: #717171;
+  /* --social-brand-color: #439346; */
+  --social-brand-color: #507d7b;
   --transparent: #ffffff40;
 
-  --hover-transparent: #07020240;
-  --hover-btn: #2d5f2f;
+  --hover-transparent: #507d7b;
+  --hover-btn: #ffffffaf;
 
-  --basic-b-color: #c5e459;
+  --basic-b-color: #abbbdf;
   --basic-grid-item: #40556f;
   --gradient: -90deg, #c5e459, #23a6d5;
-  --nav-list: #3a7d3d;
+  --nav-list: #507d7b;
   --light: #ebebeb;
 
   --main-font: 'Raleway', sans-serif;
@@ -104,8 +105,6 @@ svg {
     "header aside"
     "content content"
     "footer footer";
-
-  min-height: 600px;
 }
 
 @media(min-width: 648px) {

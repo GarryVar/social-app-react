@@ -5,9 +5,8 @@
   background-color: var(--social-brand-color);
   border-radius: var(--radius-sm);
   padding: var(--gap-inner);
-  /* background-image: url('../../../green-organic-background-3.jpg'); */
-  /* background-position: -170px -22px; */
 }
+
 .header::before {
   content: "";
 
@@ -26,6 +25,8 @@
 .inner {
   position: relative;
   display: grid;
+  align-items: center;
+
   grid-template-columns: min-content 1fr 1fr;
   border-radius: var(--radius-sm);
   z-index: 10;

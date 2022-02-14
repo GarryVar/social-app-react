@@ -12,7 +12,7 @@ import IconSettings from '../components/social-app/Navigation/icon-components/Se
 import Music from './../components/social-app/Music/Music';
 import Settings from './../components/social-app/Settings/Settings';
 
-const links = [
+export const links = [
   {
     text: 'Profile',
     link: `/profile`,
@@ -21,28 +21,26 @@ const links = [
   },
   {
     text: 'Dialogs',
-    link: `/dialogs`,
+    link: '/dialogs',
     component: <Dialogs />,
     icon: <MessageIcon />
   },
   {
     text: 'News',
-    link: `/news`,
+    link: '/news',
     component: <News />,
     icon: <NewsIcon />
   },
   {
     text: 'Music',
-    link: `/music`,
+    link: '/music',
     component: <Music />,
     icon: <MusicIcon />
   },
   {
     text: 'Settings',
-    link: `/settings`,
+    link: '/settings',
     component: <Settings />,
     icon: <IconSettings />
   }
 ];
-
-export { links };

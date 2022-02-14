@@ -1,5 +1,6 @@
 import style from './Header.module.css';
 import logo from './logo.svg';
+import SearchForm from './../../SearchForm/SearchForm';
 
 const Header = () => {
   return (
@@ -10,6 +11,7 @@ const Header = () => {
             <img src={logo} alt="" />
           </a>
         </div>
+        <SearchForm />
       </div>
     </header>
   )

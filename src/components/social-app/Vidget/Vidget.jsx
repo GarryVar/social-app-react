@@ -1,9 +1,9 @@
 import style from './Vidget.module.css';
 
-const Vidget = (props) => {
+const Vidget = ({ data }) => {
   return (
     <div className={style.vidget}>
-      {props.data}
+      {data}
     </div>
   )
 }
