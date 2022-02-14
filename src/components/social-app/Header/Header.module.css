@@ -31,13 +31,3 @@
   border-radius: var(--radius-sm);
   z-index: 10;
 }
-
-.logo {
-  width: 120px;
-  height: 60px;
-}
-
-.logo a {
-  color: white;
-  font-weight: bold;
-}

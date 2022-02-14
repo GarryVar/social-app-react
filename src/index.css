@@ -105,6 +105,8 @@ svg {
     "header aside"
     "content content"
     "footer footer";
+
+    min-height: 600px;
 }
 
 @media(min-width: 648px) {
