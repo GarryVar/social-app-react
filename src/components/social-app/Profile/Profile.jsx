@@ -10,10 +10,10 @@ const Profile = props => {
       <div className={style.inner}>
 
         {/* Header */}
-        {/* <div className={style.header}>
+        <div className={style.header}>
           <div className={style.icon}><ProfileIcon /></div>
           <h2 className={style.title}>Profile</h2>
-        </div> */}
+        </div>
 
         {/* Content */}
         <div className={style.content}>
