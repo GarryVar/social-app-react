@@ -1,6 +1,5 @@
 import { useState } from 'react/cjs/react.production.min';
 import React from 'react';
-import style from
 
 
 // const tokenAcsses = {
@@ -12,15 +11,12 @@ import style from
 // };
 
 const SearchForm = () => {
-  const [state, setState] = React.useState(0);
-  const [state2, setState2] = React.useState(1);
-
 
   return (
     <>
-      <form action="" className="form" onSubmit={evt => evt.preventDefault()}>
+      <form action="" className="form">
         <label>
-          <input type="text" placeholder="Найти..." onInput={evt => setState(evt.target.value)} />
+          <input type="text" placeholder="Найти..." />
         </label>
 
         <button type="submit">Найти</button>
