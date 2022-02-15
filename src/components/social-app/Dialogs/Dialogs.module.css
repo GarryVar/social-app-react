@@ -1,25 +1,25 @@
 .dialogs {
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 180px 1fr;
-    padding: var(--gap-inner);
-    background-color: white;
-    border-radius: var(--radius-sm);
-    border: 1px solid lightgray;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 180px 1fr;
+  padding: var(--gap-inner);
+  background-color: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgray;
 }
 
 .dialogsList {
-    display: grid;
-    gap: 10px;
-    grid-template-columns: 1fr;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
 }
 
 .dialog {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .dialog a {
-    font-weight: bold;
-    color: var(--social-brand-color);
+  font-weight: bold;
+  color: var(--social-brand-color);
 }

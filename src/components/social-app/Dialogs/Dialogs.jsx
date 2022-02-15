@@ -7,13 +7,11 @@ const Dialogs = ({ dialogs, messages }) => {
   return (
     < div className={style.dialogs} >
       <ul className={style.dialogsList}>
-        {dialogs
-          .map(({ name, id }) => <DialogItem name={name} id={id} />)}
+        {dialogs.map(({ name, id }) => <DialogItem name={name} id={id} />)}
       </ul>
 
       <ul className={style.dialogsMessages}>
-        {messages
-          .map(message => <Message value={message} />)}
+        {messages.map(message => <Message value={message} />)}
       </ul>
     </div >
   )

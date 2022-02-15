@@ -1,6 +1,5 @@
 import style from './MessageForm.module.css';
 
-
 const MessageForm = () => {
   return (
     <form className="form" onSubmit={evt => evt.preventDefault()}>
