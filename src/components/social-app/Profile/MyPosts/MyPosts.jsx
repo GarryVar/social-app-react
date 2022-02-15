@@ -1,11 +1,7 @@
 import PostItem from '../PostItem/PostItem';
 import style from '../Profile.module.css';
 
-const MyPosts = () => {
-  let posts = [
-    { id: 1, message: 'Привет всем фронтендерам!' },
-    { id: 2, message: 'react cool' },
-  ]
+const MyPosts = ({ posts }) => {
 
   return (
     <section className={style.posts}>

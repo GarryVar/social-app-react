@@ -39,11 +39,41 @@
 }
 
 .posts {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
     padding: 10px;
     border: 1px solid var(--light);
     border-radius: var(--radius-sm);
     background-color: white;
     border: 1px solid lightgray;
+}
+
+.list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: max-content;
+}
+
+.postItem {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 40px 1fr;
+}
+
+.postAvatar {
+    width: 40px;
+    height: 40px;
+    background-color: var(--social-brand-color);
+    border-radius: var(--radius-circle);
+}
+
+.postItem p {
+    padding: var(--gap-inner);
+    background-color: var(--social-brand-color);
+    border-radius: var(--radius-sm);
+    border: 1px solid lightgray;
+    color: var(--light);
 }
 
 @media(min-width: 768px) {

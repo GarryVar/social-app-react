@@ -60,7 +60,8 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -106,7 +107,7 @@ svg {
     "content content"
     "footer footer";
 
-    min-height: 400px;
+  min-height: 400px;
 }
 
 @media(min-width: 648px) {

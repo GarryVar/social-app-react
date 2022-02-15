@@ -1,7 +1,13 @@
+import style from '../Profile.module.css';
+import PostAvatar from './../MyPosts/PostAvatar/PostAvatar';
+
 const PostItem = ({ message }) => {
   return (
     <>
-      <p>{message}</p>
+      <li className={style.postItem}>
+        <PostAvatar />
+        <p>{message}</p>
+      </li>
     </>
   )
 }

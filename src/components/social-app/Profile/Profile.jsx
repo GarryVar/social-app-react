@@ -5,6 +5,13 @@ import Vidget from '../Vidget/Vidget';
 import MyPosts from './MyPosts/MyPosts';
 
 const Profile = () => {
+
+  let posts = [
+    { id: 1, message: 'Привет всем фронтендерам!' },
+    { id: 2, message: 'react cool' },
+    { id: 3, message: 'Переносим данные' }
+  ]
+
   return (
     <div className={style.profile}>
       <div className={style.inner}>
@@ -19,7 +26,7 @@ const Profile = () => {
         {/* Footer */}
         <div className="footer">
           <MessageForm />
-          <MyPosts />
+          <MyPosts posts={posts} />
         </div>
       </div>
     </div>
