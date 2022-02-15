@@ -15,23 +15,7 @@ import Settings from './components/social-app/Settings/Settings';
 import Main from './components/social-app/Main/Main';
 
 
-let dialogs = [
-  { name: "Димон", id: 1 },
-  { name: "Игорь", id: 2 },
-  { name: "Артём", id: 3 },
-  { name: "Саша", id: 4 },
-  { name: "Андрей", id: 5 },
-]
-
-let messages = [
-  { id: 1, message: 'Привет!' },
-  { id: 2, message: 'Здаров ! как ты?' },
-  { id: 3, message: 'Чё делаешь?' },
-  { id: 4, message: 'Вот и я всенм пирвет!' },
-  { id: 5, message: 'И тебе не хворать =)' },
-]
-
-const App = () => {
+const App = ({ posts, dialogs, messages }) => {
 
   return (
     <BrowserRouter>
@@ -46,7 +30,7 @@ const App = () => {
               <div className={style1.inner}>
                 <Routes>
                   <Route path='/' element={<Main />} />
-                  <Route path='/profile' element={<Profile />} />
+                  <Route path='/profile' element={<Profile posts={posts} />} />
                   <Route path='/dialogs' element={<Dialogs dialogs={dialogs} messages={messages} />} />
                   <Route path='/news' element={<News />} />
                   <Route path='/music' element={<Music />} />
@@ -61,5 +45,5 @@ const App = () => {
       </div>
     </BrowserRouter >
   )
-};
+}
 export default App;

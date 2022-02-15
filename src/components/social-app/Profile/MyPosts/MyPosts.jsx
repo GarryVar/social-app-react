@@ -7,7 +7,7 @@ const MyPosts = ({ posts }) => {
     <section className={style.posts}>
       <h2>My posts</h2>
       <ul className={style.list}>
-        {posts.map(m => <PostItem likes={m.likes} message={m.message} />)}
+        {posts.map(({ likes, message }) => <PostItem likes={likes} message={message} />)}
       </ul>
     </section>
   )

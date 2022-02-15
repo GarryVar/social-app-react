@@ -4,13 +4,7 @@ import User from './../Vidget/VidgetContent/User';
 import Vidget from '../Vidget/Vidget';
 import MyPosts from './MyPosts/MyPosts';
 
-const Profile = () => {
-
-  let posts = [
-    { id: 1, likes: 10, message: 'Привет всем фронтендерам!' },
-    { id: 2, likes: 2, message: 'react cool' },
-    { id: 3, likes: 8, message: 'Переносим данные' }
-  ]
+const Profile = ({ posts }) => {
 
   return (
     <div className={style.profile}>

@@ -5,17 +5,17 @@ import Message from './Message/Message';
 
 const Dialogs = ({ dialogs, messages }) => {
   return (
-    <div className={style.dialogs}>
+    < div className={style.dialogs} >
       <ul className={style.dialogsList}>
         {dialogs
-          .map(d => <DialogItem name={d.name} id={d.id} />)}
+          .map(({ name, id }) => <DialogItem name={name} id={id} />)}
       </ul>
 
       <ul className={style.dialogsMessages}>
         {messages
-          .map(m => <Message value={m.message} />)}
+          .map(message => <Message value={message} />)}
       </ul>
-    </div>
+    </div >
   )
 }
 
