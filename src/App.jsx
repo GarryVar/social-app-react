@@ -21,6 +21,7 @@ const App = () => {
       <div className={style.App}>
         <div className={style.container}>
           <div className={style.wrapper}>
+
             <Header />
             <Aside data={links} />
 

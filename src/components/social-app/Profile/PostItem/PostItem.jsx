@@ -1,7 +1,11 @@
+import style from '../Profile.module.css';
+
 const PostItem = ({ message }) => {
   return (
     <>
-      <p>{message}</p>
+      <li class={style.item}>
+        <p>{message}</p>
+      </li>
     </>
   )
 }

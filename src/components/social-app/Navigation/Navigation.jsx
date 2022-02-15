@@ -6,7 +6,10 @@ const Navigation = ({ items }) => {
   return (
     <nav className={style.nav}>
       <div className={style.inner}>
-        <ul className={style.list}>{items.map(link => <Navitem value={link} key={id().split('-').join('')} />)}</ul>
+        <ul className={style.list}>{
+          items
+            .map(link => <Navitem value={link} key={id().split('-').join('')} />)
+        }</ul>
 
         <button type="button" className={style.navButton}>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.333 341.333">
