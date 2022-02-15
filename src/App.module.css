@@ -32,7 +32,9 @@
     .wrapper {
         grid-template-columns: repeat(5, 1fr);
         grid-template-rows: min-content 1fr 80px;
-        grid-template-areas: "header header header header header" "aside content content content content" "aside footer footer footer footer";
+        grid-template-areas: "header header header header header" 
+        "aside content content content content" 
+        "aside footer footer footer footer";
     }
 }
 

@@ -1,0 +1,22 @@
+.inner  {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+  grid-template-columns: min-content min-content;
+  grid-area: likes;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+
+  background-color: var(--content-bg-color);
+}
+
+.icon svg {
+  fill: var(--social-brand-color);
+}
+
+.count {
+  color: var(--social-brand-light);
+}
