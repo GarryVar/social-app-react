@@ -1,9 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { links } from './scripts/items';
-
 import style from './App.module.css';
 import style1 from './components/social-app/Content/Content.module.css';
-
 import Header from './components/social-app/Header/Header';
 import Aside from './components/social-app/Aside/Aside';
 import Footer from './components/social-app/Footer/Footer';
@@ -15,8 +13,7 @@ import Settings from './components/social-app/Settings/Settings';
 import Main from './components/social-app/Main/Main';
 
 
-const App = ({ posts, dialogs, messages }) => {
-
+const App = ({state: {posts, dialogs, messages}}) => {
   return (
     <BrowserRouter>
       <div className={style.App}>

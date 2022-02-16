@@ -5,7 +5,6 @@ import Vidget from '../Vidget/Vidget';
 import MyPosts from './MyPosts/MyPosts';
 
 const Profile = ({ posts }) => {
-
   return (
     <div className={style.profile}>
       <div className={style.inner}>
