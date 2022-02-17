@@ -38,10 +38,50 @@
   overflow: auto;
 }
 
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.inner textarea {
+  padding: 10px;
+  width: 100%;
+
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
+}
+
+.inner button[type="submit"] {
+  padding: 10px;
+  width: 120px;
+  justify-self: end;
+
+  background-color: var(--social-brand-color);
+  color: var(--content-bg-color);
+  border-radius: var(--radius-sm);
+}
+
+.inner button[type="submit"]:hover {
+  background-color: var(--hover-btn);
+}
+
+.footer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
 .posts {
   display: grid;
   gap: 20px;
   grid-template-columns: 1fr;
+
+  padding: var(--gap-inner);
+
+  background-color: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
 }
 
 .item {
@@ -62,6 +102,8 @@
   grid-template-areas:
       "avatar message"
       "avatar likes";
+  border-bottom: 1px solid var(--content-bg-color);
+
 }
 
 .postAvatar {

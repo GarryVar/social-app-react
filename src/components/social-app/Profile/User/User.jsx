@@ -1,6 +1,5 @@
 import style from './User.module.css';
 
-
 const User = () => {
   return (
     <div className={style.user}>
@@ -19,5 +18,4 @@ const User = () => {
     </div>
   )
 }
-
 export default User;
