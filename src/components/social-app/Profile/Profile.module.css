@@ -1,89 +1,139 @@
-    .profile {
-        position: relative;
-    }
-    
-    .inner {
-        display: grid;
-        gap: var(--gap-inner);
-        grid-template-columns: 1fr;
-        grid-template-rows: min-content 1fr min-content;
-        align-items: center;
-    }
-    
-    .header {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 20px 1fr;
-        align-items: center;
-        padding: 8px;
-        border-radius: var(--radius-sm);
-        color: var(--content-bg-color);
-        background-color: var(--social-brand-color);
-    }
-    
-    .icon {
-        width: 20px;
-        height: 20px;
-    }
-    
-    .title {
-        font-weight: normal;
-        font-size: 20px;
-    }
-    
-    .content {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: var(--gap-inner);
-        overflow: auto;
-    }
-    
-    .posts {
-        display: grid;
-        gap: 20px;
-        grid-template-columns: 1fr;
-    }
-    
-    .item {
-        padding: 5px;
-        background-color: gray;
-    }
-    
-    .list {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: max-content;
-    }
-    
-    .postItem {
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 40px 1fr;
-        grid-template-areas: 
-            "avatar message"
-            "avatar likes";
-    }
-    
-    .postAvatar {
-        grid-area: avatar;
-        width: 40px;
-        height: 40px;
-        background-color: var(--social-brand-color);
-        border-radius: var(--radius-circle);
-    }
-    
-    .postItem p {
-        grid-area: message;
-        padding: var(--gap-inner);
-        background-color:var(--light);
-        border-radius: var(--radius-sm);
-        border: 1px solid lightgray;
-        color: var(--social-brand-color);
-    }
+.profile {
+  position: relative;
+}
 
-    
-    @media(min-width: 768px) {
-        .content {
-            grid-template-columns: 1fr 1fr;
-        }
-    }
+.inner {
+  display: grid;
+  gap: var(--gap-inner);
+  grid-template-columns: 1fr;
+  grid-template-rows: min-content 1fr min-content;
+  align-items: center;
+}
+
+.header {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
+  padding: 8px;
+  border-radius: var(--radius-sm);
+  color: var(--content-bg-color);
+  background-color: var(--social-brand-color);
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.title {
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--gap-inner);
+  overflow: auto;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+/*.inner {*/
+/*  display: grid;*/
+/*  gap: var(--gap-inner);*/
+/*  grid-template-columns: 1fr;*/
+/*}*/
+
+.inner textarea {
+  padding: 10px;
+  width: 100%;
+
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
+}
+
+.inner button[type="submit"] {
+  padding: 10px;
+  width: 120px;
+  justify-self: end;
+
+  background-color: var(--social-brand-color);
+  color: var(--content-bg-color);
+  border-radius: var(--radius-sm);
+}
+
+.inner button[type="submit"]:hover {
+  background-color: var(--hover-btn);
+}
+
+.footer {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr;
+}
+
+
+.posts {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr;
+
+  padding: var(--gap-inner);
+
+  background-color: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
+}
+
+.item {
+  padding: 5px;
+  background-color: gray;
+}
+
+.list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: max-content;
+}
+
+.postItem {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 40px 1fr;
+  grid-template-areas:
+      "avatar message"
+      "avatar likes";
+  padding: 10px;
+
+  border-bottom: 1px solid var(--content-bg-color);
+}
+
+.postAvatar {
+  grid-area: avatar;
+  width: 40px;
+  height: 40px;
+  background-color: var(--social-brand-color);
+  border-radius: var(--radius-circle);
+}
+
+.postItem p {
+  grid-area: message;
+  padding: var(--gap-inner);
+  background-color:var(--light);
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgray;
+  color: var(--social-brand-color);
+}
+
+
+@media(min-width: 768px) {
+  .content {
+      grid-template-columns: 1fr 1fr;
+  }
+}

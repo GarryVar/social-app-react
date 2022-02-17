@@ -2,6 +2,12 @@
   display: grid;
   gap: 20px;
   grid-template-columns: 60px 1fr;
+
+  padding: var(--gap-inner);
+
+  background-color: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
 }
 
 .avatar {

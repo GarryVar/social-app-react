@@ -1,9 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { links } from './scripts/items';
-
 import style from './App.module.css';
 import style1 from './components/social-app/Content/Content.module.css';
-
 import Header from './components/social-app/Header/Header';
 import Aside from './components/social-app/Aside/Aside';
 import Footer from './components/social-app/Footer/Footer';
@@ -15,8 +13,7 @@ import Settings from './components/social-app/Settings/Settings';
 import Main from './components/social-app/Main/Main';
 
 
-const App = ({ posts, dialogs, messages }) => {
-
+const App = ({state: {profilePage, messagesPage}, addPost}) => {
   return (
     <BrowserRouter>
       <div className={style.App}>
@@ -24,14 +21,23 @@ const App = ({ posts, dialogs, messages }) => {
           <div className={style.wrapper}>
 
             <Header />
+
             <Aside data={links} />
 
             <main className={style1.content}>
               <div className={style1.inner}>
                 <Routes>
                   <Route path='/' element={<Main />} />
-                  <Route path='/profile' element={<Profile posts={posts} />} />
-                  <Route path='/dialogs' element={<Dialogs dialogs={dialogs} messages={messages} />} />
+                  <Route path='/profile' element={
+                    <Profile
+                      posts={profilePage.posts}
+                      addPost={addPost} />} />
+
+                  <Route path='/dialogs' element={
+                    <Dialogs
+                      dialogs={messagesPage.dialogs}
+                      messages={messagesPage.messages} />} />
+
                   <Route path='/news' element={<News />} />
                   <Route path='/music' element={<Music />} />
                   <Route path='/settings' element={<Settings />} />
