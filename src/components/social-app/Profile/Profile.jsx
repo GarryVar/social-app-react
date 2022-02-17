@@ -1,27 +1,24 @@
 import style from './Profile.module.css';
-import MessageForm from './../MessageForm/MessaageForm';
-import User from './../Vidget/VidgetContent/User';
-import Vidget from '../Vidget/Vidget';
-import MyPosts from './MyPosts/MyPosts';
+import MyPosts from "./MyPosts/MyPosts";
+import User from "./User/User";
 
-const Profile = ({ posts }) => {
+
+const Profile = ({ posts, addPost }) => {
   return (
     <div className={style.profile}>
       <div className={style.inner}>
 
         {/* Content */}
         <div className={style.content}>
-          <Vidget data={<User />} />
+          <User />
         </div>
 
         {/* Footer */}
-        <div className="footer">
-          <MessageForm />
-          <Vidget data={<MyPosts posts={posts} />} />
+        <div className={style.footer}>
+          <MyPosts posts={posts} addPost={addPost } />
         </div>
       </div>
     </div>
   )
 }
-
 export default Profile;

@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/masonry-ui.iml" filepath="$PROJECT_DIR$/.idea/masonry-ui.iml" />
+
       <module fileurl="file://$PROJECT_DIR$/.idea/social-app-react.iml" filepath="$PROJECT_DIR$/.idea/social-app-react.iml" />
     </modules>
   </component>

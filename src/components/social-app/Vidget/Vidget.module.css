@@ -1,8 +1,0 @@
-.vidget {
-  padding: var(--gap-inner);
-  overflow: auto;
-
-  background-color: white;
-  border-radius: var(--radius-sm);
-  border: 1px solid lightgrey;
-}
