@@ -2,7 +2,8 @@ import style from './MessageForm.module.css';
 
 const MessageForm = () => {
   return (
-    <form className="form" onSubmit={evt => evt.preventDefault()}>
+
+      <form className="form" onSubmit={evt => evt.preventDefault()}>
       <div className={style.inner}>
         <label htmlFor="message">
           <textarea
@@ -13,9 +14,6 @@ const MessageForm = () => {
             placeholder="Post message"></textarea>
         </label>
         <button type="submit">Send</button>
-
-        <div>
-        </div>
       </div>
     </form >
   )
