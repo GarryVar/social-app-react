@@ -4,6 +4,8 @@
   align-items: center;
   grid-template-columns: min-content min-content;
   grid-area: likes;
+  width: min-content;
+  justify-self: end;
 }
 
 .icon {
