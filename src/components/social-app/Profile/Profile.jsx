@@ -4,7 +4,6 @@ import User from "./User/User";
 
 
 const Profile = ({ posts, addPost }) => {
-
   return (
     <div className={style.profile}>
       <div className={style.inner}>
