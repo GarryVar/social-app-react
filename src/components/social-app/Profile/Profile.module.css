@@ -77,7 +77,16 @@
   gap: 10px;
   grid-template-columns: 1fr;
 }
+.list {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: max-content;
+  width: min-content;
 
+  border-radius: var(--radius-sm);
+  border: 1px solid lightgrey;
+
+}
 
 .posts {
   display: grid;
@@ -89,17 +98,12 @@
   background-color: white;
   border-radius: var(--radius-sm);
   border: 1px solid lightgrey;
+  overflow: hidden;
 }
 
 .item {
   padding: 5px;
   background-color: gray;
-}
-
-.list {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: max-content;
 }
 
 .postItem {
@@ -111,7 +115,11 @@
       "avatar likes";
   padding: 10px;
 
-  border-bottom: 1px solid var(--content-bg-color);
+  border-bottom: 1px solid lightgray;
+}
+
+.postItem:last-child {
+  border: none;
 }
 
 .postAvatar {
