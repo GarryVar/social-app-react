@@ -27,7 +27,6 @@ const state = {
 };
 
 export let addPost = postText => {
-  debugger;
   let newPost = {
     id: 6,
     likes: 0,
@@ -35,8 +34,7 @@ export let addPost = postText => {
   };
 
   state.profilePage.posts.push(newPost);
-  renderEntireTree();
+  renderEntireTree(state);
 };
 
 export default state;
-

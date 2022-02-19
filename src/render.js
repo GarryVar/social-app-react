@@ -2,9 +2,9 @@ import React from 'react';
 import './index.css';
 import ReactDOM from "react-dom";
 import App from "./App";
-import state, {addPost} from "./redux/state";
+import addPost from "./redux/state";
 
-export let renderEntireTree = () => {
+export let renderEntireTree = (state) => {
   ReactDOM.render(
     <React.StrictMode>
       <App

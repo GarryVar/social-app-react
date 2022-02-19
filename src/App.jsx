@@ -13,16 +13,13 @@ import Settings from './components/social-app/Settings/Settings';
 import Main from './components/social-app/Main/Main';
 
 
-
-const App = ({state: {profilePage, messagesPage}, addPost}) => {
+const App = ({state:{messagesPage, profilePage}, addPost}) => {
   return (
     <BrowserRouter>
       <div className={style.App}>
         <div className={style.container}>
           <div className={style.wrapper}>
-
             <Header />
-z
             <Aside data={links} />
 
             <main className={style1.content}>
@@ -30,7 +27,6 @@ z
                 <Routes>
                   <Route path='/' element={<Main />} />
                   <Route path='/profile' element={<Profile posts={profilePage.posts} addPost={addPost} />} />
-
                   <Route path='/dialogs' element={<Dialogs dialogs={messagesPage.dialogs} messages={messagesPage.messages} />} />
                   <Route path='/news' element={<News />} />
                   <Route path='/music' element={<Music />} />
@@ -38,7 +34,6 @@ z
                 </Routes>
               </div>
             </main>
-
             <Footer />
           </div>
         </div>
