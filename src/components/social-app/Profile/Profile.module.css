@@ -107,6 +107,7 @@
       "avatar message"
       "avatar likes";
   padding: 10px;
+  max-width: 420px;
 
   border-bottom: 1px solid lightgray;
 }
@@ -126,10 +127,13 @@
 .postItem p {
   grid-area: message;
   padding: var(--gap-inner);
+
   background-color:var(--light);
   border-radius: var(--radius-sm);
   border: 1px solid lightgray;
   color: var(--social-brand-color);
+
+  word-break: break-all;
 }
 
 
