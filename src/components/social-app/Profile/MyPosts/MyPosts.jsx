@@ -2,13 +2,15 @@ import PostItem from '../PostItem/PostItem';
 import style from '../Profile.module.css';
 import React from 'react';
 
-const MyPosts = ({posts, addPost}) => {
+
+const MyPosts = ({posts, addPost, updateNewPostText}) => {
   let newPostElement = React.createRef();
-  let addNewPost = () => {
-    let text = newPostElement.current.value;
-    addPost(text);
-    newPostElement.current.value = '';
+
+  let onPostChange = () => {
+    let textValue = newPostElement.current.value;
+    updateNewPostText(textValue);
   };
+
 
   return (
     <>
@@ -17,12 +19,13 @@ const MyPosts = ({posts, addPost}) => {
           <label htmlFor="message">
             <textarea
               ref={newPostElement}
+              onChange={onPostChange}
               name="message"
               id="message"
               rows="5"
               placeholder="Post message" />
           </label>
-          <button type="submit" onClick={addNewPost}>Send</button>
+          <button type="submit" onClick={addPost}>Send</button>
         </div>
       </form >
         <section className={style.posts}>

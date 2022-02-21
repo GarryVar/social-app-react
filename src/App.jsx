@@ -13,7 +13,7 @@ import Settings from './components/social-app/Settings/Settings';
 import Main from './components/social-app/Main/Main';
 
 
-const App = ({state:{messagesPage, profilePage}, addPost}) => {
+const App = ({state:{dialogsPage, profilePage},addPost, updateNewPostText}) => {
   return (
     <BrowserRouter>
       <div className={style.App}>
@@ -26,8 +26,17 @@ const App = ({state:{messagesPage, profilePage}, addPost}) => {
               <div className={style1.inner}>
                 <Routes>
                   <Route path='/' element={<Main />} />
-                  <Route path='/profile' element={<Profile posts={profilePage.posts} addPost={addPost} />} />
-                  <Route path='/dialogs' element={<Dialogs dialogs={messagesPage.dialogs} messages={messagesPage.messages} />} />
+                  <Route path='/profile' element={
+                    <Profile
+                     profilePage={profilePage}
+                     updateNewPostText={updateNewPostText}
+                     addPost={addPost} />} />
+
+                  <Route path='/dialogs' element={
+                    <Dialogs
+                      dialogs={dialogsPage.dialogs}
+                      messages={dialogsPage.messages} />} />
+
                   <Route path='/news' element={<News />} />
                   <Route path='/music' element={<Music />} />
                   <Route path='/settings' element={<Settings />} />

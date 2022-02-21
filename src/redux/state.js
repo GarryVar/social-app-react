@@ -1,14 +1,16 @@
-import {renderEntireTree} from "../render";
+import {v4 as id} from "uuid";
+
+let renderEntireTree = () => {
+  console.log(`state has changed`)
+}
 
 const state = {
   profilePage: {
-    posts: [
-      { id: 1, likes: 10, message: 'Привет всем фронтендерам!' },
-      { id: 2, likes: 2, message: 'react cool' },
-      { id: 3, likes: 8, message: 'Переносим данные' }
-    ],
+    posts: [],
+    newPostText: '',
+    likes: '',
   },
-  messagesPage: {
+  dialogsPage: {
     dialogs: [
       {id: 1, name: "Мишка",},
       {id: 2, name: "Игорь",},
@@ -23,17 +25,23 @@ const state = {
       {id: 4, message: 'Вот и я всенм пирвет!'},
       {id: 5, message: 'И тебе не хворать =)'},
     ],
-  }
+  },
 };
 
-export let addPost = postText => {
+export let addPost = () => {
   let newPost = {
-    id: 6,
+    id: id().split('-').join(''),
     likes: 0,
-    message: postText,
+    message: state.profilePage.newPostText,
   };
 
   state.profilePage.posts.push(newPost);
+  state.profilePage.newPostText = '';
+  renderEntireTree(state);
+};
+
+export let updateNewPostText = newTextValue => {
+  state.profilePage.newPostText = newTextValue;
   renderEntireTree(state);
 };
 

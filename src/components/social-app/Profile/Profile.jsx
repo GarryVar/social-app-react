@@ -3,18 +3,22 @@ import MyPosts from "./MyPosts/MyPosts";
 import User from "./User/User";
 import Picture from "./Picture/Picture";
 
-const Profile = ({ posts, addPost }) => {
+const Profile = ({profilePage, addPost, updateNewPostText}) => {
   return (
     <div className={style.profile}>
       <div className={style.inner}>
-        <Picture />
 
+        <Picture />
         <div className={style.content}>
           <User />
         </div>
 
         <div className={style.footer}>
-          <MyPosts posts={posts} addPost={addPost } />
+          <MyPosts
+            posts={profilePage.posts}
+            newPostText={profilePage.newPostText}
+            updateNewPostText={updateNewPostText}
+            addPost={addPost} />
         </div>
       </div>
     </div>

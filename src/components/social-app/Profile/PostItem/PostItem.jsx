@@ -4,6 +4,7 @@ import Likes from './../Likes/Likes';
 
 
 const PostItem = ({ likes, message }) => {
+  debugger;
   return (
     <>
       <li className={style.postItem}>
